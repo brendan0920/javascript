@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ternary Demo</title>
+    <script>
+        function cehckDow() {
+            let dayNum = document.getElementById("dayNum").value;
+            let weekendStr = "";
+            if (dayNum < 6) {
+                weekendStr = "Weekday";
+            } else {
+                weekendStr = "Weekend";
+            }
+            console.log("CheckDow function called. dayNum = " + dayNum + ", weekendStr = " + weekendStr);
+        }
+
+    </script>
+</head>
+
+<body>
+    Day of Week:<input type="number" id="dayNum" />
+    <button oncolic="CheckDow()">Check it! </button>
+    <p id="weekend"> Weekday or Weekend?</p>
+
+</body>
+
+</html>
